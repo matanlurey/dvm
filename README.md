@@ -40,6 +40,11 @@ Available commands:
 
 This package is a _work in progress_, and _pull requests are welcome_!
 
+* [ ] Use SHA256 to validate the download.
+* [ ] Support installing from a local path.
+* [ ] Configure whether to keep archives or auto-unzip.
+* [ ] Use system installed unzip if available.
+
 ## Why a Dart package and not X?
 
 Dart is already a cross-platform language, and binaries can be easily installed

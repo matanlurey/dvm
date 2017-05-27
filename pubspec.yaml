@@ -6,7 +6,7 @@ authors:
 homepage: https://github.com/matanlurey/dvm
 
 environment:
-  sdk: >=1.22.0 <2.0.0
+  sdk: '>=1.22.0 <2.0.0'
 
 dependencies:
   archive: ^1.0.20
