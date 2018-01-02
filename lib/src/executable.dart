@@ -13,7 +13,6 @@ import 'package:pub_semver/pub_semver.dart';
 import 'package:stack_trace/stack_trace.dart';
 
 import 'commands/install.dart';
-import 'commands/list.dart';
 import 'commands/switch.dart';
 
 import 'dart_downloads.dart';
@@ -104,9 +103,6 @@ class _DvmCommandRunner extends CommandRunner<Null> {
       getCurrentOS: getCurrentOS,
       getLatestVersion: getLatestVersion,
       isOnline: isOnline,
-      logger: logger,
-    ));
-    addCommand(new ListCommand(
       logger: logger,
     ));
     addCommand(new SwitchCommand(
