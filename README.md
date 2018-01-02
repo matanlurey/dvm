@@ -33,7 +33,6 @@ Global options:
 Available commands:
   help      Display help information for dvm.
   install   Download and install a <version/channel>.
-  list      Lists the installed versions of the Dart SDK.
   switch    Switches the `current` directory to <version/channel>.
 ```
 
