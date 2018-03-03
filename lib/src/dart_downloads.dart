@@ -55,6 +55,7 @@ Uri getDownloadUri({
   if (version == null) {
     throw new ArgumentError.notNull('version');
   }
+
   return new Uri(
     scheme: 'https',
     host: 'storage.googleapis.com',
@@ -154,7 +155,7 @@ Future<Release> getRelease(
     return null;
   }
   final argument = command.argResults.arguments.first;
-  if (argument == 'stable' || argument == 'version') {
+  if (argument == 'stable' || argument == 'dev') {
     channel = toChannel(argument);
     logger.config('Channel: ${channelToString(channel)}.');
     logger.fine('Looking up latest version for $argument...');
